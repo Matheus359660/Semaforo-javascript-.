@@ -21,3 +21,5 @@ function acenderVermelho(){
     luzVermelha.classList.add("acesa","vermelha");
 }
 
+function acenderAmarelo(){
+    
