@@ -30,14 +30,14 @@ h1{
     font-size: 16px;
 }
 /* Cor do Botão*/
-#btnVermelho {background-color: #ff4c4c;}
-#btnAmarelo {background-color: #ffd633;}
-#btnVerde {background-color: #5dc65c;}
-#btnAuto {background-color: #ccc;}
-#btnParar {background-color: limegreen;}
+#btnVermelho {background-color:#ff4c4c}
+#btnAmarelo {background-color:#ffd633;}
+#btnVerde {background-color:#5dc65c;}
+#btnAuto {background-color:#ccc}
+#btnParar {background-color:limegreen}
 
 /* estilo das luzes acesas*/
 
-.acesa.vermelha {background-color: red;}
-.acesa.amarela {background-color: yellow;}
-.acesa.verde {background-color: green;}
+.acesa.vermelha {background-color:red;}
+.acesa.amarela {background-color:yellow;}
+.acesa.verde {background-color:green;}
