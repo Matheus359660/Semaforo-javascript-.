@@ -50,5 +50,5 @@ function parar(){
 btnParar.onclick = parar;
 btnAuto.onclick = modoAutomativo;
 btnVerde.onclick = acenderVerde;
-btnAmarelo.onclick = acenderAmarela;
+btnAmarela.onclick = acenderAmarela;
 btnVermelho.onclick = acenderVermelho;
