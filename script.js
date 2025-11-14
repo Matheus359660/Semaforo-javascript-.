@@ -1,45 +1,44 @@
-//Seleciona os elementos das luzes
-const luzVermelha = document.getElementById("vermelho");
-const luzAmarelo = document.getElementById("amarela");
+//Selecione os elementos das luzes
+const luzVermelho = document.getElementById("vermelho");
+const luzAmarelo = document.getElementById("amarelo");
 const luzVerde = document.getElementById("verde");
 // Botões
 const btnVermelho = document.getElementById("btnVermelho");
-const btnAmarela = document.getElementById("btnAmarela");
+const btnAmarelo = document.getElementById("btnAmarelo");
 const btnVerde = document.getElementById("btnVerde");
 const btnAuto = document.getElementById("btnAuto");
 const btnParar = document.getElementById("btnParar");
-//variável para o modo automático
+// Variável para o modo automático
 let intervalo;
 
 function limpar(){
-    luzVermelha.className = 'luz';
+    luzVermelho.className = 'luz';
     luzAmarelo.className = 'luz';
     luzVerde.className = 'luz';
 }
 
 function acenderVermelho(){
     limpar();
-    luzVermelha.classList.add("acesa","vermelho");
+    luzVermelho.classList.add("acesa","vermelho");
 }
 
-function acenderAmarela(){
+function acenderAmarelo(){
     limpar();
-    luzAmarelo.classList.add("acesa","amarela");
+    luzAmarelo.classList.add("acesa","amarelo");
 }
-
 function acenderVerde(){
     limpar();
     luzVerde.classList.add("acesa","verde");
 }
 
-function modoAutomativo(){
+function modoAutomatico(){
     limpar();
-    let estado =0
+    let estado =0;
     intervalo = setInterval(()=>{
         if(estado === 0 ) acenderVermelho();
-        else if (estado === 1 ) acenderAmarela();
-        else if (estado === 1 ) acenderVerde();
-        estado = (estado +1) % 3;
+        else if(estado === 1) acenderAmarelo();
+        else if(estado === 2) acenderVerde();
+        estado = (estado + 1) % 3;
     },1000)
 }
 
@@ -47,8 +46,9 @@ function parar(){
     clearInterval(intervalo);
     limpar();
 }
+
 btnParar.onclick = parar;
-btnAuto.onclick = modoAutomativo;
+btnAuto.onclick = modoAutomatico;
 btnVerde.onclick = acenderVerde;
-btnAmarela.onclick = acenderAmarela;
+btnAmarelo.onclick = acenderAmarelo;
 btnVermelho.onclick = acenderVermelho;
